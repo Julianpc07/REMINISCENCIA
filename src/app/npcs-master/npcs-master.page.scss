@@ -1,0 +1,73 @@
+ion-content {
+    --background: none;
+  
+    .background-image {
+        position: relative; /* Cambiado de fixed a relative */
+        min-height: 100vh; /* Asegura que ocupe el alto completo de la pantalla */
+        width: 100%; 
+        background-image: url('../../assets/Login.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat; 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 20px; /* Espacio para el scroll */
+    }
+  
+    .title-container {
+        margin-top: 20px;
+        text-align: center;
+        color: #f5f5f5;
+        font-size: 1.8em;
+        font-weight: bold;
+    }
+  
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+        width: 90%;
+        max-width: 600px;
+        margin-top: 20px;
+    }
+  
+    .character-card {
+        background: rgba(50, 50, 50, 0.8);
+        border: 2px solid #404040;
+        border-radius: 8px;
+        text-align: center;
+        overflow: hidden;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+  
+    .character-card img {
+        width: 100%;
+        height: auto;
+        border-bottom: 1px solid #404040;
+    }
+  
+    .character-name {
+        padding: 8px;
+        font-size: 1em;
+        color: #fff;
+    }
+  
+    .button-container {
+        margin-top: 20px;
+        background: rgba(69, 65, 65, 0.742);
+        border-radius: 10px;
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        text-align: center;
+    }
+  
+    .start-button {
+        width: 150px;
+        --background: #5d5555;
+        --color: rgb(5, 0, 0);
+        border-radius: 8px;
+        padding: 10px;
+        opacity: 1;
+    }
+}

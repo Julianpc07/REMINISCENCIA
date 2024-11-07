@@ -1,0 +1,46 @@
+ion-content {
+  --background: none;
+
+  .background-image {
+    position: fixed; 
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%; 
+    background-image: url('../../assets/Elegir_Rol.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; 
+    display: flex;
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
+    z-index: -1;
+  }
+
+  .button-container {
+    background: rgba(69, 65, 65, 0.742); /* Fondo blanco semitransparente */
+    border-radius: 10px; /* Esquinas redondeadas */
+    padding: 20px; /* Espaciado interno */
+    margin: 20px; /* Margen alrededor del recuadro */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para darle profundidad */
+    display: flex; /* Flexbox para centrar los botones */
+    flex-direction: column; /* Coloca los botones en columna */
+    align-items: center; /* Centra los botones horizontalmente */
+    justify-content: center; /* Centra verticalmente dentro del contenedor */
+  }
+
+  .start-button {
+    margin-top: 10px; /* Espacio entre los botones */
+    width: 150px;
+    --background: #5d5555; /* Color gris sólido */
+    --color: rgb(0, 0, 0); /* Color del texto */
+    border-radius: 8px; /* Bordes redondeados */
+    padding: 10px;
+    text-align: center;
+    opacity: 1;
+  }
+
+  ion-content {
+    overflow: hidden; /* Evita el scroll */
+  }
+}

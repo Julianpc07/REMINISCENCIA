@@ -18,11 +18,9 @@ export class RegistroPage {
     private toastController: ToastController,
     private http: HttpClient // Añadimos HttpClient
   ) {}
-  
   goToLogin() {
     this.navCtrl.navigateForward('/login');
   }
-  
   async register() {
     if (this.nombre && this.usuario && this.email && this.contrasena) {
       const data = {
@@ -33,7 +31,7 @@ export class RegistroPage {
       };
 
       // Enviar datos al servidor
-      this.http.post('http://192.168.1.8:3000/register', data)
+      this.http.post('http://localhost:3000/register', data)
         .subscribe(
           async response => {
             console.log('Usuario registrado:', response);

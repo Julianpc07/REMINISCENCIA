@@ -30,7 +30,7 @@ export class LoginPage implements OnInit {
         contrasena: this.contrasena,
       };
 
-      this.http.post('http://192.168.1.8:3000/login', data)
+      this.http.post('http://localhost:3000/login', data)
         .subscribe(
           async (response: any) => {
             if (response.success) {
@@ -72,3 +72,20 @@ export class LoginPage implements OnInit {
     }
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -10,7 +10,7 @@ app.use(bodyParser.json());
 // Configura la conexión a PostgreSQL
 const pool = new Pool({
   user: 'postgres',
-  host: 'localhost',
+  host: '192.168.1.8',  // Cambié 'localhost' por la IP local de tu computadora
   database: 'Reminiscencia',
   password: '03273025',
   port: 5432,
@@ -59,6 +59,6 @@ app.post('/login', async (req, res) => {
 });
 
 const PORT = 3000;
-app.listen(PORT, () => {
-  console.log(`Servidor corriendo en http://localhost:${PORT}`);
+app.listen(PORT, '0.0.0.0', () => {  // Cambié 'localhost' a '0.0.0.0'
+  console.log(`Servidor corriendo en http://0.0.0.0:${PORT}`);
 });

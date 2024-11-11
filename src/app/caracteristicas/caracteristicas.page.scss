@@ -1,0 +1,88 @@
+$font-size-table-header: 16px;
+$font-size-table-cell: 14px;
+$padding-table: 12px;
+$border-radius: 15px;
+$shadow-opacity: 0.3;
+
+ion-content {
+    --background: url('/assets/personajes.jpg') no-repeat center center / cover;
+    background-size: cover;
+}
+
+.title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ff6f61;
+    margin-bottom: 20px;
+    text-align: center;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: $border-radius;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, $shadow-opacity);
+}
+
+.center-character-info {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 20px;
+}
+
+.character-info {
+    font-family: 'Arial', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.table-container {
+    margin: 30px auto;
+    max-width: 90%;
+    overflow-x: auto;
+    border-radius: $border-radius;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, $shadow-opacity);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: $border-radius;
+    overflow: hidden;
+}
+
+th, td {
+    padding: $padding-table;
+    border: 1px solid #444;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+}
+
+th {
+    font-size: $font-size-table-header;
+    font-weight: 600;
+    background-color: #ff6f61;
+    color: #fff;
+}
+
+td {
+    font-size: $font-size-table-cell;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+table tbody tr:nth-child(even) {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+table tbody tr:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+    cursor: pointer;
+}

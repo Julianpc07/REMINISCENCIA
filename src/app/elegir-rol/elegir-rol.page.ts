@@ -14,4 +14,8 @@ export class ElegirRolPage {
     this.navCtrl.navigateForward('/login');
   }
 
+  Player() {
+    this.navCtrl.navigateForward('/servidores-player');
+  }
+
 }

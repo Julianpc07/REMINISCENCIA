@@ -47,6 +47,39 @@ const routes: Routes = [
     path: 'servidores-master',
     loadChildren: () => import('./servidores-master/servidores-master.module').then( m => m.ServidoresMasterPageModule)
   },
+  {
+    path: 'servidores-player',
+    loadChildren: () => import('./servidores-player/servidores-player.module').then( m => m.ServidoresPlayerPageModule)
+  },
+  {
+    path: 'personajes-player',
+    loadChildren: () => import('./personajes-player/personajes-player.module').then( m => m.PersonajesPlayerPageModule)
+  },  {
+    path: 'mateoo',
+    loadChildren: () => import('./mateoo/mateoo.module').then( m => m.MateooPageModule)
+  },
+  {
+    path: 'cubo',
+    loadChildren: () => import('./cubo/cubo.module').then( m => m.CuboPageModule)
+  },
+  {
+    path: 'sebastian',
+    loadChildren: () => import('./sebastian/sebastian.module').then( m => m.SebastianPageModule)
+  },
+  {
+    path: 'elgordo',
+    loadChildren: () => import('./elgordo/elgordo.module').then( m => m.ElgordoPageModule)
+  },
+  {
+    path: 'camilo',
+    loadChildren: () => import('./camilo/camilo.module').then( m => m.CamiloPageModule)
+  },
+  {
+    path: 'caracteristicas',
+    loadChildren: () => import('./caracteristicas/caracteristicas.module').then( m => m.CaracteristicasPageModule)
+  },
+
+
 ];
 
 @NgModule({

@@ -5,7 +5,7 @@ ion-content {
       position: relative;
       min-height: 100vh;
       width: 100%;
-      background-image: url('../../assets/crear.jpg'); /* Fondo estilo mapa antiguo */
+      background-image: url('../../assets/Fondo_Juego_Pantalla.jpeg'); /* Fondo estilo mapa antiguo */
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
@@ -26,6 +26,8 @@ ion-content {
     }
   
     .title-container {
+      position: relative;
+      top: -60px;
       margin-top: 35px;
       text-align: center;
       color: #000000;
@@ -35,6 +37,8 @@ ion-content {
     }
   
     .table-container {
+      position: relative;
+      top: -20px;
       background: #b87e4c;/* Fondo de la tabla */
       border: 2px solid #3e1f0e; /* Borde oscuro */
       border-radius: 10px;

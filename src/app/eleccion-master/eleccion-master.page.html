@@ -1,16 +1,19 @@
 <ion-content>
   <!-- Imagen de fondo -->
-  <div class="background-image">
-    <div class="button-container">
-      <h2 style="color: rgb(0, 0, 0); text-align: center;">Elección Master</h2> 
-      <ion-button expand="block" class="start-button" (click)="CrearServidor()">
-        <ion-icon name="server"></ion-icon>
-        CREAR SERVIDOR
-      </ion-button>
-      <ion-button expand="block" class="start-button">
-        <ion-icon name="folder-open"></ion-icon> 
-        VER TUS SERVIDORES
-      </ion-button>
+  <div class="login-wrapper">
+    <div class="background-image">
+      <div class="button-container">
+        <h2 class="titulo">Elección Master</h2> 
+        <ion-button expand="block" class="start-button" (click)="CrearServidor()">
+          CREAR MUNDO
+        </ion-button>
+        <ion-button expand="block" class="start-button" (click)="Player()">
+          JUGADORES
+        </ion-button>
+        <ion-button expand="block" class="start-button" (click)="Salir()">
+          SALIR
+        </ion-button>
+      </div>
     </div>
   </div>
 </ion-content>

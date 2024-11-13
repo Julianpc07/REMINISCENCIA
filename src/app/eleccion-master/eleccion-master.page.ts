@@ -13,4 +13,13 @@ export class EleccionMasterPage {
   CrearServidor() {
     this.navCtrl.navigateForward('/crear-servidor');
   }
+  Player() {
+    this.navCtrl.navigateForward('/servidores-player');
+  }
+  Salir() {
+    this.navCtrl.navigateForward('/home');
+  }
+
+
+
 }

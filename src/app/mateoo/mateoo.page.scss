@@ -1,10 +1,13 @@
 ion-content {
-    --background: url('/assets/fondo_de_personajes.jpeg');
+    --background: url('/assets/Fondo_Juego_Pantalla.jpeg');
     width: 100%;
     
 }
 
 .container {
+    position: relative;
+    top: -25px;
+    left: 85px;
     padding: 20px;
     border-radius: 10px;
     color: #fff;
@@ -19,7 +22,7 @@ ion-content {
     text-align: center;
     font-size: 2em;  
     font-weight: bold;
-    color: #ffda79;  
+    color: #ffb700;  
     margin-bottom: 20px;
 }
 

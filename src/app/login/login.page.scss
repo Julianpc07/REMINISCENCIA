@@ -1,54 +1,68 @@
-ion-content {
-    --background: none;
-
-    .background-image {
-        position: fixed; 
-        top: 0;
-        left: 0;
-        height: 100%;
-        width: 100%; 
-        background-image: url('../../assets/Login.jpg');
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat; 
-        display: flex;
-        align-items: center; /* Centra el contenido verticalmente */
-        z-index: -1;
-    }
-
-    .button-container {
-        background: rgba(69, 65, 65, 0.742); /* Fondo blanco semitransparente */
-        border-radius: 10px; /* Esquinas redondeadas */
-        padding: 20px; /* Espaciado interno */
-        margin: 20px; /* Margen alrededor del recuadro */
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para darle profundidad */
-        display: flex; /* Flexbox para centrar los botones */
-        flex-direction: column; /* Coloca los botones en columna */
-        align-items: center; /* Alinea los elementos al inicio (izquierda) */
-        justify-content: flex-start; /* Alinea verticalmente al inicio */
-        margin-left: 20px; /* Agrega margen a la izquierda para separar del borde */
-    }
-
-    .start-button {
-        margin-top: 10px; /* Espacio entre los botones */
-        width: 150px;
-        --background: #5d5555; /* Color gris sólido */
-        --color: rgb(5, 0, 0); /* Color del texto */
-        border-radius: 8px; /* Bordes redondeados */
-        padding: 10px;
-        text-align: center;
-        opacity: 1;
-    }
-
-    .login-input {
-        margin-top: 10px; /* Espacio entre los inputs */
-        width: 100%; /* Ancho completo del contenedor */
-        --padding-start: 10px; /* Espaciado interno para mayor comodidad */
-        background-color: rgba(139, 69, 19, 0.804);
-        color: black;
-    }
-
-    ion-content {
-        overflow: hidden; /* Evita el scroll */
-    }
-}
+body, ion-content {
+    --background: url('../../assets/Fondo_Juego_Pantalla.jpeg') no-repeat center center / cover;
+  }
+  
+  .login-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: relative;
+  }
+  
+  .login-wrapper {
+    background-color: #593527;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+    color: #fff;
+    margin-left: 33.5%;
+    margin-top: 10%;
+  }
+  
+  .title {
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #ffffff;
+    margin: 0 0 20px;
+  }
+  
+  .login-card {
+    background: none;
+    box-shadow: none;
+    
+  }
+  
+  .input-item {
+    --background: transparent;
+    --border-color: #ffffff;
+    margin-bottom: 15px;
+  }
+  
+  .input-item ion-icon {
+    color: #ffffff;
+  }
+  
+  .input-item ion-input {
+    color: #ffffff;
+    font-size: 16px;
+  }
+  
+  .login-button {
+    --background: #5A3A31;
+    --color: #ffffff;
+    font-size: 16px;
+  }
+  
+  .login-button:hover {
+    --background: #764C44;
+  }
+  
+  .create-account-button {
+    --border-color: #ffffff6c;
+    --color: #ffffff99;
+    font-size: 16px;
+    margin-top: 10px;
+  }

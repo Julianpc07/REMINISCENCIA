@@ -5,7 +5,7 @@ ion-content {
     position: relative;
     height: 100%;
     width: 100%;
-    background-image: url('../../assets/fondo_juego_pantalla.png');
+    background-image: url('../../assets/Fondo_Juego_Pantalla.jpeg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat; 
@@ -15,12 +15,12 @@ ion-content {
     justify-content: flex-start;
     padding-top: 240px; 
   }
-
   .start-button {
-    margin-top: 20px; 
-    width: 150px; 
-    --background: #5d5555; 
-    --color: rgb(0, 0, 0);
+    margin-top: 20px;
+    font-size: 30px; 
+    width: 450px; 
+    --background: #593527; 
+    --color: white;
     border-radius: 8px; 
     padding: 10px; 
     text-align: center; 

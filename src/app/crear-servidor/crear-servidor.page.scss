@@ -7,7 +7,7 @@ ion-content {
         left: 0;
         height: 100%;
         width: 100%;
-        background-image: url('../../assets/crear.jpg');
+        background-image: url('../../assets/Fondo_Juego_Pantalla.jpeg');
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -18,50 +18,56 @@ ion-content {
     }
 
     .form-container {
+        background-color: #593527; // Color de fondo del cuadro
+        border: 2px solid #fff; // Borde claro alrededor del cuadro
         border-radius: 8px;
-        padding: 15px;
-        width: 320px; 
+        position: relative;
+        padding: 20px;
+        width: 350px; 
         max-width: 90%; 
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
-        color: black;
+        color: #fff;
         text-align: center;
     }
 
     h2 {
-        margin-bottom: 10px;
-        font-size: 1.2em;
+        margin-bottom: 15px;
+        font-size: 1.5em;
+        color: #fff;
+        font-weight: bold;
     }
 
     .form-row {
         display: flex;
-        flex-direction: row;
         align-items: center;
         width: 100%;
-        margin-top: 8px;
+        margin-top: 12px;
     }
 
     ion-label {
-        width: 45%; /* Ajusta el ancho del label para que todo quede alineado */
+        width: 45%; 
         text-align: right;
         margin-right: 10px;
+        color: #fff;
     }
 
     .input-field, .image-input {
-        width: 55%; /* Ajusta el ancho de los inputs */
-        --padding-start: 8px;
-        background-color: rgba(190, 65, 7, 0.804);
-        color: black;
+        width: 55%;
+        padding: 8px;
+        background-color: #382420; // Color de fondo de los campos
+        color: #fff; // Color del texto
+        border-radius: 4px;
     }
 
     .submit-button {
-        margin-top: 12px;
+        margin-top: 15px;
         width: 100%;
-        --background: #5d5555;
-        --color: rgb(5, 0, 0);
+        background-color: #8B5E3C; // Color de fondo del botón
+        color: #fff;
+        font-weight: bold;
         border-radius: 6px;
     }
 }
